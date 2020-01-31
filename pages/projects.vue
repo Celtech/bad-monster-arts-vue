@@ -7,7 +7,7 @@
     </b-row>
 
     <b-row>
-      <b-col v-for="project in projectList" sm="12" md="6" class="mb-3">
+      <b-col v-for="(project, index) in projectList" :key="index" sm="12" md="6" class="mb-3">
         <div class="web-browser">
           <div class="ribbon">
             <span class="dot" style="background:#ED594A;" />
