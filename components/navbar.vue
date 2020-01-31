@@ -11,23 +11,25 @@
         <b-navbar-toggle target="nav-collapse" />
 
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
-            <b-nav-item>
-              <nuxt-link to="/">
-                Home
-              </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/projects">
-                My Portfolio
-              </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/contact">
-                Contact
-              </nuxt-link>
-            </b-nav-item>
-          </b-navbar-nav>
+          <client-only>
+            <b-navbar-nav>
+              <b-nav-item>
+                <nuxt-link to="/">
+                  Home
+                </nuxt-link>
+              </b-nav-item>
+              <b-nav-item>
+                <nuxt-link to="/projects">
+                  My Portfolio
+                </nuxt-link>
+              </b-nav-item>
+              <b-nav-item>
+                <nuxt-link to="/contact">
+                  Contact
+                </nuxt-link>
+              </b-nav-item>
+            </b-navbar-nav>
+          </client-only>
 
           <b-navbar-nav class="ml-auto">
             <b-nav-item href="https://www.linkedin.com/in/timhinz16/" target="_blank">
