@@ -7,7 +7,7 @@
     </b-row>
 
     <b-row>
-      <b-col v-for="project in projectList" cols="6">
+      <b-col v-for="project in projectList" sm="12" md="6" class="mb-3">
         <div class="web-browser">
           <div class="ribbon">
             <span class="dot" style="background:#ED594A;" />
@@ -15,14 +15,16 @@
             <span class="dot" style="background:#5AC05A;" />
 
             <div class="address-bar">
-              {{ project.url }}
+              <a :href="project.url" target="_blank" rel="noopener">
+                {{ project.url }}
+              </a>
             </div>
 
             <font-awesome-icon :icon="['fas', 'bars']" class="ribbon-button" />
           </div>
 
           <div class="browser-window">
-            <img :src="project.website" alt="website.com">
+            <img v-lazy="project.website" :alt="project.url">
           </div>
         </div>
       </b-col>
@@ -42,17 +44,19 @@ export default {
     })
   },
   async mounted () {
-    const data = await this.$axios.$get('http://127.0.0.1:8000/api/projects?page=1')
-    this.$store.commit('projects/load', data)
+    try {
+      const data = await this.$axios.$get('http://127.0.0.1:8000/api/projects?page=1')
+      this.$store.commit('projects/load', data)
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.log(e.message)
+      this.$sentry.captureException(e)
+    }
   }
 }
 </script>
 
 <style lang="scss">
-  [attribute^="col-"] {
-    margin-bottom: 10px !important;
-  }
-
   .web-browser {
     width: 100%;
     background: #f1f1f1;
@@ -82,8 +86,17 @@ export default {
         height: 100%;
         border-radius: 15px;
         padding-left: 10px;
+        padding-right: 10px;
         margin: -3px 10px 0 5px;
         flex-grow: 100;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-wrap: none;
+
+        a{
+          color: #000000;
+        }
       }
 
       .ribbon-button {
@@ -100,6 +113,10 @@ export default {
       img {
         width: 100%;
         height: auto;
+      }
+
+      img[lazy=loading] {
+        height: 100px;
       }
     }
   }

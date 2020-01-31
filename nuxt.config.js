@@ -1,5 +1,14 @@
+// import path from 'path'
+// import fs from 'fs'
 
 export default {
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
+  //   }
+  // },
+
   mode: 'universal',
   /*
   ** Headers of the page
@@ -8,7 +17,7 @@ export default {
     htmlAttrs: {
       lang: 'en-us'
     },
-    title: process.env.npm_package_name || '',
+    title: 'Tim Hinz | Full stack web developer',
     meta: [
       { lang: 'en-us' },
       { charset: 'utf-8' },
@@ -32,6 +41,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/vue-lazyload'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -50,6 +60,8 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/sentry',
     [
       'nuxt-fontawesome', {
         imports: [
@@ -63,8 +75,29 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    ['nuxt-social-meta', {
+      url: 'Site url',
+      title: 'Title site',
+      description: 'Description site',
+      img: 'Link to image in static folder',
+      locale: 'en_US',
+      twitter: '@Lulceltech',
+      themeColor: '#ff0000'
+    }]
   ],
+
+  sitemap: {
+    hostname: 'https://www.timhinz.wtf',
+    gzip: true,
+    exclude: []
+  },
+
+  sentry: {
+    dsn: 'https://346d2ab6c310447c8e8f0e686756cf30@sentry.io/2127663', // Enter your project's DSN here
+    config: {} // Additional config
+  },
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
