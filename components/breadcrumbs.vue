@@ -18,25 +18,22 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
 
-export default Vue.extend({
+export default {
   computed: {
-    crumbs (): object[] {
-      const crumbs: object[] = [];
+    crumbs () {
+      const crumbs = []
       this.$route.matched.forEach((item) => {
         if (item.name !== 'index') {
-          if(typeof item.name !== 'undefined') {
-            crumbs.push(item)
-          }
+          crumbs.push(item)
         }
-      });
+      })
 
       return crumbs
     }
   }
-});
+}
 </script>
 
 <style lang="scss" scoped>

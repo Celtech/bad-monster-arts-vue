@@ -6,18 +6,13 @@ module.exports = {
     es6: true,
   },
   parserOptions: {
-    parser: '@typescript-eslint/parser'
+    parser: 'babel-eslint'
   },
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:nuxt/recommended'
   ],
   // add your custom rules here
   rules: {
-  },
-  plugins: [
-    '@typescript-eslint',
-    '@typescript-eslint/eslint-plugin',
-  ],
+  }
 }
