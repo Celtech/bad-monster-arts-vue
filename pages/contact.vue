@@ -8,11 +8,11 @@
           <b-form-group
             id="input-group-email"
             label="Email address:"
-            label-for="input-1"
+            label-for="email-form"
             description="We'll never share your email with anyone else."
           >
             <b-form-input
-              id="input-1"
+              id="email-form"
               type="email"
               required
               placeholder="Enter email"
@@ -23,9 +23,9 @@
 
       <b-row>
         <b-col>
-          <b-form-group id="input-group-name" label="First Name:" label-for="input-2">
+          <b-form-group id="input-group-name" label="First Name:" label-for="first-name-form">
             <b-form-input
-              id="input-2"
+              id="first-name-form"
               required
               placeholder="First name"
             />
@@ -33,9 +33,9 @@
         </b-col>
 
         <b-col>
-          <b-form-group id="input-group-name-2" label="Last Name:" label-for="input-2">
+          <b-form-group id="input-group-name-2" label="Last Name:" label-for="last-name-form">
             <b-form-input
-              id="input-2"
+              id="last-name-form"
               required
               placeholder="Last name"
             />
@@ -43,9 +43,9 @@
         </b-col>
       </b-row>
 
-      <b-form-group id="input-group-message" label="Your Message:" label-for="textarea">
+      <b-form-group id="input-group-message" label="Your Message:" label-for="message-form">
         <b-form-textarea
-          id="textarea"
+          id="message-form"
           placeholder="Enter your message..."
           rows="6"
           max-rows="6"

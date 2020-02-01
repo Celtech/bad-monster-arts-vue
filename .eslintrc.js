@@ -6,7 +6,7 @@ module.exports = {
     es6: true,
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'typescript-eslint-parser'
   },
   extends: [
     '@nuxtjs',
@@ -14,5 +14,9 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-  }
+  },
+  plugins: [
+    '@typescript-eslint/eslint-plugin',
+    'typescript'
+  ],
 }
