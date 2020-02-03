@@ -62,6 +62,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/sentry',
+    '@nuxtjs/recaptcha',
     [
       'nuxt-fontawesome', {
         imports: [
@@ -87,6 +88,13 @@ export default {
     }]
   ],
 
+  recaptcha: {
+    siteKey: '6LdDVtUUAAAAAKi6XqA3p81S5jPKOr--byoghPLl',
+    size: 'normal',
+    hideBadge: true,
+    version: 3
+  },
+
   sitemap: {
     hostname: 'https://www.timhinz.wtf',
     gzip: true,
@@ -105,11 +113,11 @@ export default {
   axios: {
     headers: {
       common: {
-        'Accept': 'application/json'
+        Accept: 'application/json'
       },
       delete: {},
       get: {
-        'Accept': 'application/json'
+        Accept: 'application/json'
       },
       head: {},
       post: {},
@@ -118,9 +126,6 @@ export default {
     }
 
   },
-  extends: [
-    '@nuxtjs/eslint-config-typescript'
-  ],
 
   /*
   ** Build configuration

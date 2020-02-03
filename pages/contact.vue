@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Want to get in touch?</h1>
 
-    <b-form @submit="" @reset="">
+    <b-form @submit="onSubmit">
       <b-row>
         <b-col>
           <b-form-group
@@ -43,18 +43,26 @@
         </b-col>
       </b-row>
 
-      <b-form-group id="input-group-message" label="Your Message:" label-for="message-form">
-        <b-form-textarea
-          id="message-form"
-          placeholder="Enter your message..."
-          rows="6"
-          max-rows="6"
-        />
-      </b-form-group>
+      <b-row>
+        <b-col md="6" sm="12" class="text-right">
+          <b-form-group id="input-group-message" label="Your Message:" label-for="message-form">
+            <b-form-textarea
+              id="message-form"
+              placeholder="Enter your message..."
+              rows="6"
+              max-rows="6"
+            />
+          </b-form-group>
+        </b-col>
+      </b-row>
 
-      <b-button type="submit" variant="primary">
-        Send Message
-      </b-button>
+      <b-row>
+        <b-col md="6" sm="12" class="text-right">
+          <b-button type="submit" variant="primary" class="submit-button mb-3">
+            Send Message
+          </b-button>
+        </b-col>
+      </b-row>
     </b-form>
   </div>
 </template>
@@ -63,9 +71,28 @@
 
 export default {
   components: {
+  },
+  async mounted () {
+    await this.$recaptcha.init()
+  },
+  methods: {
+    async onSubmit () {
+      try {
+        const token = await this.$recaptcha.execute('login')
+        console.log('ReCaptcha token:', token)
+      } catch (error) {
+        console.log('Login error:', error)
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
+  .submit-button {
+    @media only screen and (max-width: 600px) {
+      display: block;
+      width: 100%;
+    };
+  }
 </style>
