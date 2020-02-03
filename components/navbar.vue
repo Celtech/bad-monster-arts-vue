@@ -4,7 +4,7 @@
       <b-navbar toggleable="lg" type="dark" variant="dark" class="navbar-dark">
         <b-navbar-brand>
           <div class="avatar-wrapper">
-<!--            <div class="avatar" />-->
+            <div class="avatar" />
           </div>
         </b-navbar-brand>
 
