@@ -28,11 +28,16 @@ export default {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
+    background: #f1f1f1 !important;
     word-spacing: 1px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+
+    body {
+      background: #f1f1f1 !important;
+    }
 
     .page-wrapper {
       position: relative;
@@ -43,12 +48,12 @@ export default {
     }
 
     .btn-primary {
-      background: #00adb5 !important;
-      border: 1px solid #00adb5 !important;
+      background: #C14545 !important;
+      border: 1px solid #C14545 !important;
 
       &:hover {
-        background: #2BCED6 !important;
-        border: 1px solid #2BCED6 !important;
+        background: #EA4C4C !important;
+        border: 1px solid #EA4C4C !important;
       }
     }
   }

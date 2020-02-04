@@ -9,7 +9,6 @@
             id="input-group-email"
             label="Email address:"
             label-for="email-form"
-            description="We'll never share your email with anyone else."
           >
             <b-form-input
               id="email-form"
@@ -44,7 +43,7 @@
       </b-row>
 
       <b-row>
-        <b-col md="6" sm="12" class="text-right">
+        <b-col md="12" sm="12">
           <b-form-group id="input-group-message" label="Your Message:" label-for="message-form">
             <b-form-textarea
               id="message-form"
@@ -57,7 +56,15 @@
       </b-row>
 
       <b-row>
-        <b-col md="6" sm="12" class="text-right">
+        <b-col md="6" sm="12">
+          <input
+            id="confirm_email"
+            aria-hidden="true"
+            name="confirm_email"
+            type="hidden"
+            autocomplete="off"
+            tabindex="-1"
+          >
           <b-button type="submit" variant="primary" class="submit-button mb-3">
             Send Message
           </b-button>
@@ -76,12 +83,14 @@ export default {
     await this.$recaptcha.init()
   },
   methods: {
-    async onSubmit () {
+    async onSubmit (e) {
+      e.preventDefault()
+
       try {
         const token = await this.$recaptcha.execute('login')
         console.log('ReCaptcha token:', token)
       } catch (error) {
-        console.log('Login error:', error)
+        this.$sentry.captureException(error)
       }
     }
   }

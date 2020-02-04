@@ -48,8 +48,6 @@ export default {
       const data = await this.$axios.$get('http://127.0.0.1:8000/api/projects?page=1')
       this.$store.commit('projects/load', data)
     } catch (e) {
-      // eslint-disable-next-line no-console
-      console.log(e.message)
       this.$sentry.captureException(e)
     }
   }

@@ -1,13 +1,15 @@
-// import path from 'path'
-// import fs from 'fs'
+import path from 'path'
+import fs from 'fs'
+
+require('dotenv').config()
 
 export default {
-  // server: {
-  //   https: {
-  //     key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
-  //     cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
-  //   }
-  // },
+  server: {
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, 'localhost.key')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt'))
+    }
+  },
 
   mode: 'universal',
   /*
@@ -28,40 +30,28 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
+
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
+
   css: [
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
+
   plugins: [
     '@/plugins/vue-lazyload'
   ],
-  /*
-  ** Nuxt.js dev-modules
-  */
+
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/dotenv'
   ],
-  /*
-  ** Nuxt.js modules
-  */
+
   modules: [
-    // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/sentry',
+    '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
     [
       'nuxt-fontawesome', {
@@ -89,27 +79,33 @@ export default {
   ],
 
   recaptcha: {
-    siteKey: '6LdDVtUUAAAAAKi6XqA3p81S5jPKOr--byoghPLl',
+    siteKey: process.env.RECAPTCHA_PUBLIC,
     size: 'normal',
     hideBadge: true,
     version: 3
   },
 
   sitemap: {
-    hostname: 'https://www.timhinz.wtf',
+    hostname: process.env.BASE_URL,
     gzip: true,
     exclude: []
   },
 
   sentry: {
-    dsn: 'https://346d2ab6c310447c8e8f0e686756cf30@sentry.io/2127663', // Enter your project's DSN here
-    config: {} // Additional config
+    dsn: process.env.SENTERY_DNS,
+    config: {}
   },
 
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
+  pwa: {
+    icon: {
+      iconFileName: 'icon.jpg'
+    }
+  },
+
+  router: {
+    linkActiveClass: 'selected'
+  },
+
   axios: {
     headers: {
       common: {
@@ -127,13 +123,24 @@ export default {
 
   },
 
-  /*
-  ** Build configuration
-  */
+  render: {
+    http2: {
+      push: true,
+      pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
+        .filter(f => f.asType === 'script' && f.file === 'runtime.js')
+        .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`)
+    }
+    // static: {
+    //   maxAge: '1y',
+    //   setHeaders (res, path) {
+    //     if (path.includes('sw.js')) {
+    //       res.setHeader('Cache-Control', `public, max-age=${15 * 60}`)
+    //     }
+    //   }
+    // }
+  },
+
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend (config, ctx) {
     }
   }

@@ -70,7 +70,7 @@
         overflow: hidden;
 
         .avatar {
-          background: url("http://timhinz-131fb.kxcdn.com/avatar.jpg?width=75&height=75&quality=100") no-repeat center center;
+          background: url("https://timhinz-131fb.kxcdn.com/avatar.jpg?width=75&height=75&quality=100") no-repeat center center;
           background-size: 75px 75px;
           width: 100%;
           height: 100%;
