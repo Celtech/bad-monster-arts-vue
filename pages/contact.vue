@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <article>
     <h1>Want to get in touch?</h1>
 
     <b-form @submit="onSubmit">
@@ -9,6 +9,7 @@
             id="input-group-email"
             label="Email address:"
             label-for="email-form"
+            description="We'll never share your email with anyone else."
           >
             <b-form-input
               id="email-form"
@@ -22,22 +23,18 @@
 
       <b-row>
         <b-col>
-          <b-form-group id="input-group-name" label="First Name:" label-for="first-name-form">
+          <b-form-group id="input-group-name" label="Your Name:" label-for="name-form">
             <b-form-input
-              id="first-name-form"
+              id="name-form"
               required
-              placeholder="First name"
+              placeholder="Your name"
             />
           </b-form-group>
         </b-col>
 
         <b-col>
-          <b-form-group id="input-group-name-2" label="Last Name:" label-for="last-name-form">
-            <b-form-input
-              id="last-name-form"
-              required
-              placeholder="Last name"
-            />
+          <b-form-group id="input-group-name-2" label="Contact Reason:" label-for="last-name-form">
+            <b-form-select id="contact-reason-form" :options="options" v-model="selected" required />
           </b-form-group>
         </b-col>
       </b-row>
@@ -71,13 +68,28 @@
         </b-col>
       </b-row>
     </b-form>
-  </div>
+  </article>
 </template>
 
 <script>
 
 export default {
   components: {
+  },
+  data () {
+    return {
+      selected: null,
+      options: [
+        { value: 'null', text: 'Please select an option' },
+        { value: '1', text: 'Bug or issue with one of our games' },
+        { value: '2', text: 'Bug or issue with our website' },
+        { value: '3', text: 'Pricing/Sales' },
+        { value: '4', text: 'Billing' },
+        { value: '5', text: 'Marketing/PR' },
+        { value: '6', text: 'Partnerships' },
+        { value: '7', text: 'Employment' }
+      ]
+    }
   },
   async mounted () {
     await this.$recaptcha.init()
@@ -103,5 +115,9 @@ export default {
       display: block;
       width: 100%;
     };
+  }
+
+  article {
+    padding: 10px 10px 0 10px;
   }
 </style>

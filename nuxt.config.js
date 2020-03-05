@@ -4,15 +4,6 @@ import fs from 'fs'
 require('dotenv').config()
 
 export default {
-  server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'localhost.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt'))
-    },
-    port: (process.env.NODE_ENV === 'production') ? 80 : 3000,
-    host: (process.env.NODE_ENV === 'production') ? '0.0.0.0' : '127.0.0.1'
-  },
-
   mode: 'universal',
   /*
   ** Headers of the page
@@ -21,7 +12,7 @@ export default {
     htmlAttrs: {
       lang: 'en-us'
     },
-    title: 'Tim Hinz | Full stack web developer',
+    title: 'Bad Monster Arts | Indie Game Studio',
     meta: [
       { lang: 'en-us' },
       { charset: 'utf-8' },
@@ -29,7 +20,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' }
     ]
   },
 
@@ -70,12 +61,12 @@ export default {
       }
     ],
     ['nuxt-social-meta', {
-      url: 'Site url',
-      title: 'Title site',
+      url: 'www.badmonsterarts.com',
+      title: 'Bad Monster Arts | Indie Game Studio',
       description: 'Description site',
       img: 'Link to image in static folder',
       locale: 'en_US',
-      twitter: '@Lulceltech',
+      twitter: '@BadMonsterArts',
       themeColor: '#ff0000'
     }]
   ],
@@ -100,7 +91,7 @@ export default {
 
   pwa: {
     icon: {
-      iconFileName: 'icon.jpg'
+      iconFileName: '/images/favicon/apple-touch-icon.png'
     }
   },
 
