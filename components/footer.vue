@@ -7,11 +7,27 @@
         </h2>
         <small class="mb-3">Sign up to get the latest updates on our projects.</small>
 
-        <b-form inline class="text-center mt-2">
+        <b-form @submit="onSubmit" inline class="text-center mt-2">
           <div class="form-wrapper m-auto">
-            <b-input type="text" name="name" placeholder="Your Name" class="mr-2" />
-            <b-input type="email" name="email" placeholder="email@example.com" class="mr-2" />
-            <b-button variant="primary">Sign up</b-button>
+            <b-input
+              v-model="name"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="mr-2"
+              required
+            />
+            <b-input
+              v-model="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              class="mr-2"
+              required
+            />
+            <b-button variant="primary" type="submit">
+              Sign up
+            </b-button>
           </div>
         </b-form>
       </b-container>
@@ -53,6 +69,69 @@
     </b-container>
   </footer>
 </template>
+
+<script>
+
+export default {
+  components: {
+  },
+  data () {
+    return {
+      name: '',
+      email: ''
+    }
+  },
+  methods: {
+    async onSubmit (e) {
+      e.preventDefault()
+
+      const data = {
+        email_address: this.email,
+        status: 'subscribed',
+        merge_fields: {
+          FNAME: this.name.split(' ').slice(0, -1).join(' '),
+          LNAME: this.name.split(' ').slice(-1).join(' ')
+        }
+      }
+      await this.$axios.$post('/mail_chimp/', data, {
+        auth: {
+          username: 'BMA',
+          password: process.env.MAILCHIMP_API_KEY
+        }
+      }).then((response) => {
+        this.$bvToast.toast(`Thank you for subscribing to our mailing list!`, {
+          title: 'Success',
+          autoHideDelay: 5000
+        })
+
+        this.name = null
+        this.email = null
+      }).catch((error) => {
+        if (error.response) {
+          this.$sentry.captureException(error)
+
+          if (error.response.data.title === 'Member Exists') {
+            this.$bvToast.toast(`You're already subscribed to our mailing list!`, {
+              title: 'Error',
+              variant: 'danger',
+              autoHideDelay: 5000
+            })
+          } else {
+            this.$bvToast.toast(`An unknown error has occurred!`, {
+              title: 'Error',
+              variant: 'danger',
+              autoHideDelay: 5000
+            })
+          }
+
+          this.name = null
+          this.email = null
+        }
+      })
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
   footer {

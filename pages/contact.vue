@@ -116,8 +116,4 @@ export default {
       width: 100%;
     };
   }
-
-  article {
-    padding: 10px 10px 0 10px;
-  }
 </style>

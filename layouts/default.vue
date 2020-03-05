@@ -53,6 +53,10 @@ export default {
           margin-bottom: 18rem;
         }
 
+        a{
+          color: #689bd2;
+        }
+
         article {
           background: #ffffff;
           margin-bottom: 1rem;

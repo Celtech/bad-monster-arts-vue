@@ -46,6 +46,7 @@ export default {
     '@nuxtjs/sentry',
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
+    '@nuxtjs/proxy',
     [
       'nuxt-fontawesome', {
         imports: [
@@ -100,6 +101,7 @@ export default {
   },
 
   axios: {
+    proxy: true,
     headers: {
       common: {
         Accept: 'application/json'
@@ -109,11 +111,22 @@ export default {
         Accept: 'application/json'
       },
       head: {},
-      post: {},
+      post: {
+        Accept: 'application/json'
+      },
       put: {},
       patch: {}
     }
+  },
 
+  proxy: {
+    '/mail_chimp/': {
+      target: process.env.MAILCHIMP_DNS,
+      pathRewrite: {
+        '^/mail_chimp/': ''
+      },
+      changeOrigin: true
+    }
   },
 
   render: {
