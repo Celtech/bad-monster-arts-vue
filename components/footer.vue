@@ -3,7 +3,7 @@
     <div class="news-letter">
       <b-container class="text-center">
         <h2 class="p-0 m-0">
-          Want some news?
+          Join our newsletter
         </h2>
         <small class="mb-3">Sign up to get the latest updates on our projects.</small>
 
