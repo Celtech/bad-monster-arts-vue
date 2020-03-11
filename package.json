@@ -28,7 +28,9 @@
     "bootstrap-vue": "^2.0.0",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
-    "nuxt-social-meta": "0.0.1"
+    "nuxt-sanity": "^0.0.8",
+    "nuxt-social-meta": "0.0.1",
+    "sanity-blocks-vue-component": "^0.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

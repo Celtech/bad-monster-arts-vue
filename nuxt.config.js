@@ -28,8 +28,13 @@ export default {
         href: 'https://fonts.gstatic.com',
         crossorigin: true
       },
+      {
+        rel: 'preconnect',
+        href: 'https://cdn.jsdelivr.net',
+        crossorigin: true
+      },
       { rel: 'preconnect', href: 'https://www.google.com', crossorigin: true },
-      { rel: 'preconnect', href: 'https://www.gstatic.com', crossorigin: true }
+      { rel: 'preconnect', href: 'https://www.gstatic.com', crossorigin: true },
     ]
   },
 
@@ -47,6 +52,7 @@ export default {
     '@nuxtjs/recaptcha',
     '@nuxtjs/robots',
     '@nuxtjs/proxy',
+    'nuxt-sanity',
     [
       'nuxt-fontawesome',
       {
@@ -75,6 +81,11 @@ export default {
       }
     ]
   ],
+
+  sanity: {
+    projectId: 'boiuafoj', // required
+    dataset: 'production' // required
+  },
 
   recaptcha: {
     siteKey: process.env.RECAPTCHA_PUBLIC,
