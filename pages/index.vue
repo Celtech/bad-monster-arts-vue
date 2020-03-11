@@ -2,14 +2,26 @@
   <div>
     <b-row>
       <b-col>
-        <hooper :auto-play="true" :infinite-scroll="true" :play-speed="5000" >
-          <slide>
-            slide 1
-          </slide>
-          <slide>
-            slide 2
-          </slide>
-        </hooper>
+        <b-carousel
+          id="carousel"
+          controls
+          indicators
+          fade
+          img-width="1024"
+          img-height="480"
+        >
+          <b-carousel-slide
+            caption="First slide"
+            text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+            img-src="https://picsum.photos/1024/480/?image=52"
+          />
+
+          <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
+            <h1>Hello world!</h1>
+          </b-carousel-slide>
+
+          <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58" />
+        </b-carousel>
       </b-col>
     </b-row>
     <b-row>
@@ -64,13 +76,9 @@
 </template>
 
 <script>
-import { Hooper, Slide } from 'hooper'
-import 'hooper/dist/hooper.css'
 
 export default {
   components: {
-    Hooper,
-    Slide
   }
 }
 </script>
@@ -80,11 +88,12 @@ export default {
     padding: 0 !important;
   }
 
-  .hooper {
+  #carousel {
     border-radius: 0;
     background: #689bd2;
     margin-bottom: 1rem;
     min-height: 300px;
+    text-shadow: 1px 1px 2px #333;
 
     &:focus {
       outline: none;

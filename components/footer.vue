@@ -10,6 +10,7 @@
         <b-form @submit="onSubmit" inline class="text-center mt-2">
           <div class="form-wrapper m-auto">
             <b-input
+              id="name"
               v-model="name"
               type="text"
               name="name"
@@ -17,14 +18,18 @@
               class="mr-2"
               required
             />
+            <label class="sr-only" for="name">Full Name</label>
+
             <b-input
               v-model="email"
+              id="email"
               type="email"
               name="email"
               placeholder="email@example.com"
               class="mr-2"
               required
             />
+            <label class="sr-only" for="email">E-mail Address</label>
             <b-button variant="primary" type="submit">
               Sign up
             </b-button>

@@ -5,7 +5,7 @@
         <b-navbar-brand>
           <nuxt-link to="/">
             <div class="avatar-wrapper">
-              <div class="avatar" />
+              <img src="~/assets/logo.png" class="avatar" loading="lazy" alt="Main Logo">
             </div>
           </nuxt-link>
         </b-navbar-brand>
@@ -14,34 +14,35 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-navbar-nav>
-              <b-nav-item>
-                <nuxt-link to="/">
-                  About Us
-                </nuxt-link>
-              </b-nav-item>
-              <b-nav-item-dropdown text="Our Games" right>
-                <b-dropdown-item href="#">
-                  None
-                </b-dropdown-item>
-              </b-nav-item-dropdown>
-              <b-nav-item>
-                <nuxt-link to="/">
-                  Careers
-                </nuxt-link>
-              </b-nav-item>
-              <b-nav-item>
-                <nuxt-link to="/contact">
-                  Contact
-                </nuxt-link>
-              </b-nav-item>
-            </b-navbar-nav>
-
+            <client-only>
+              <b-navbar-nav>
+                <b-nav-item>
+                  <nuxt-link to="/">
+                    About Us
+                  </nuxt-link>
+                </b-nav-item>
+                <b-nav-item-dropdown text="Our Games" right>
+                  <b-dropdown-item href="#">
+                    None
+                  </b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item>
+                  <nuxt-link to="/careers">
+                    Careers
+                  </nuxt-link>
+                </b-nav-item>
+                <b-nav-item>
+                  <nuxt-link to="/contact">
+                    Contact
+                  </nuxt-link>
+                </b-nav-item>
+              </b-navbar-nav>
+            </client-only>
             <b-nav-item href="https://twitter.com/badmonsterarts" target="_blank">
               <font-awesome-icon :icon="['fab', 'twitter']" />
               <span class="social-title">Twitter</span>
             </b-nav-item>
-            <b-nav-item href="https://twitter.com/badmonsterarts" target="_blank">
+            <b-nav-item href="https://www.instagram.com/badmonsterarts/" target="_blank">
               <font-awesome-icon :icon="['fab', 'instagram']" />
               <span class="social-title">Instagram</span>
             </b-nav-item>
@@ -79,9 +80,7 @@
           overflow: hidden;
 
           .avatar {
-            background: url("~assets/logo.png") no-repeat center center;
-            background-size: 100% 100%;
-            width: 100%;
+            width: auto;
             height: 100%;
           }
         }

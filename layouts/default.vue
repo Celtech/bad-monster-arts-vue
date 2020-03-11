@@ -6,6 +6,8 @@
         <nuxt />
       </main>
       <Footer />
+
+      <Cookie />
     </div>
   </div>
 </template>
@@ -13,11 +15,13 @@
 <script>
 import Navbar from '~/components/navbar.vue'
 import Footer from '~/components/footer.vue'
+import Cookie from '~/components/cookie.vue'
 
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    Cookie
   }
 }
 </script>
@@ -65,7 +69,6 @@ export default {
           padding: 20px 20px 10px 20px;
 
           img {
-            background: #393e46;
             width: 100%;
             height: auto;
           }

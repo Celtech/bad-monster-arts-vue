@@ -1,13 +1,8 @@
-import path from 'path'
-import fs from 'fs'
 
 require('dotenv').config()
 
 export default {
   mode: 'universal',
-  /*
-  ** Headers of the page
-  */
   head: {
     htmlAttrs: {
       lang: 'en-us'
@@ -20,18 +15,14 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
+      { rel: 'preconnect', href: 'https://www.google.com', crossorigin: true },
+      { rel: 'preconnect', href: 'https://www.gstatic.com', crossorigin: true }
     ]
   },
 
   loading: { color: '#fff' },
-
-  css: [
-  ],
-
-  plugins: [
-    '@/plugins/vue-lazyload'
-  ],
 
   buildModules: [
     '@nuxtjs/eslint-module',
@@ -46,6 +37,7 @@ export default {
     '@nuxtjs/sentry',
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
+    '@nuxtjs/robots',
     '@nuxtjs/proxy',
     [
       'nuxt-fontawesome', {
@@ -129,21 +121,9 @@ export default {
     }
   },
 
-  render: {
-    http2: {
-      push: true,
-      pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
-        .filter(f => f.asType === 'script' && f.file === 'runtime.js')
-        .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`)
-    }
-    // static: {
-    //   maxAge: '1y',
-    //   setHeaders (res, path) {
-    //     if (path.includes('sw.js')) {
-    //       res.setHeader('Cache-Control', `public, max-age=${15 * 60}`)
-    //     }
-    //   }
-    // }
+  robots: {
+    UserAgent: '*',
+    Disallow: ''
   },
 
   build: {
