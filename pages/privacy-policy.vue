@@ -14,7 +14,7 @@
           </span>
         </p>
         <p style="font-size: 15px; line-height: 1.5;">
-          <br>
+          <br />
         </p>
         <p style="font-size: 15px;">
           <span style="color: rgb(89, 89, 89);">
@@ -153,7 +153,7 @@
           </span>
         </p>
         <p style="font-size: 15px; line-height: 1.5;">
-          <span style="color: rgb(89, 89, 89);"><br></span>
+          <span style="color: rgb(89, 89, 89);"><br /></span>
         </p>
         <p style="font-size:15px;">
           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">TABLE OF CONTENTS</span></span></strong></span>
@@ -251,7 +251,7 @@
           <a data-custom-class="link" href="#contact"><span style="color: rgb(89, 89, 89);">13. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</span></a>
         </p>
         <p style="font-size: 15px; line-height: 1.5;">
-          <span style="color: rgb(89, 89, 89);"><br></span>
+          <span style="color: rgb(89, 89, 89);"><br /></span>
         </p>
         <p id="infocollect" style="font-size:15px;">
           <span style="color: rgb(0, 0, 0);">
@@ -266,7 +266,7 @@
           </span>
         </p>
         <div style="line-height: 1.1;">
-          <br>
+          <br />
         </div>
         <div><span style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_2">Personal information you disclose to us</span></strong></span></div>
         <p style="font-size: 15px;">
@@ -385,7 +385,7 @@
           </span>
         </p>
         <p style="font-size: 15px;">
-          <strong><span data-custom-class="heading_2"><br><span style="font-size: 16px;">Information automatically collected</span></span></strong>
+          <strong><span data-custom-class="heading_2"><br /><span style="font-size: 16px;">Information automatically collected</span></span></strong>
         </p>
         <p style="font-size: 15px;">
           <span style="color: rgb(89, 89, 89);">
@@ -497,7 +497,7 @@
           </span>
         </p>
         <p style="font-size: 15px;">
-          <strong><span style="font-size: 16px;"><span data-custom-class="heading_2"><strong><span data-custom-class="heading_2"><br>Information collected through our Apps</span></strong></span></span></strong>
+          <strong><span style="font-size: 16px;"><span data-custom-class="heading_2"><strong><span data-custom-class="heading_2"><br />Information collected through our Apps</span></strong></span></span></strong>
         </p>
         <p style="font-size: 15px;">
           <span style="color: rgb(89, 89, 89);">
@@ -568,7 +568,7 @@
                 </span>
               </span>
             </span>
-            <br><br>
+            <br /><br />
           </li>
           <li>
             <span style="font-size: 15px;">
@@ -587,7 +587,7 @@
                 </span>
               </span>
             </span>
-            <br><br>
+            <br /><br />
           </li>
           <li>
             <span style="font-size: 15px;">
@@ -636,7 +636,7 @@
           </span>
         </p>
         <p style="font-size: 15px; line-height: 1.5;">
-          <br>
+          <br />
         </p>
         <p id="infouse" style="font-size: 15px;">
           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">2. HOW DO WE USE YOUR INFORMATION?</span></span></strong></span>
@@ -676,7 +676,7 @@
               </span>
             </span>
           </span>
-          <br><br>
+          <br /><br />
         </p>
         <li>
           <span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><strong><span data-custom-class="body_text">To send you marketing and promotional communications.</span></strong><span data-custom-class="body_text">&nbsp;We and/or our third party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. You can opt-out of our marketing emails at any time (see the "</span></span></span><span data-custom-class="body_text"><a data-custom-class="link" href="#privacyrights"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);">WHAT ARE YOUR PRIVACY RIGHTS</span></span></a></span>
@@ -702,7 +702,7 @@
               </span>
             </span>
           </span>
-          <br><br>
+          <br /><br />
         </li>
         <li>
           <span style="font-size: 15px;">
@@ -761,9 +761,9 @@
               </span>
             </span>
           </span>
-          <br><br>
+          <br /><br />
         </li>
-        <li><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><strong><span data-custom-class="body_text">To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.</span></strong></span></span><br><br></li>
+        <li><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><strong><span data-custom-class="body_text">To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.</span></strong></span></span><br /><br /></li>
         <li>
           <span style="font-size: 15px;">
             <span style="color: rgb(89, 89, 89);">
@@ -823,7 +823,7 @@
               </span>
             </span>
           </span>
-          <span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><br></span></span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><br /></span></span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </li>
         <li>
           <span style="font-size: 15px;">
@@ -991,7 +991,7 @@
             </span>
           </span>
           <span class="block-component" />
-          <br><br>
+          <br /><br />
         </li>
         <li>
           <span style="font-size: 15px;">
@@ -1091,7 +1091,7 @@
               </span>
             </span>
           </span>
-          <br><br>
+          <br /><br />
         </li>
         <li>
           <span style="color: rgb(89, 89, 89); font-size: 15px;">
@@ -1363,7 +1363,7 @@
           </span>
         </li>
         <p style="font-size: 15px; line-height: 1.5;">
-          <br>
+          <br />
         </p>
         <p id="infoshare" style="font-size:15px;">
           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</span></span></strong></span>
@@ -1373,10 +1373,10 @@
         </p>
         <div><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text">We may process or share data based on the following legal basis:</span></span></div>
         <ul>
-          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Consent:</strong> We may process your data if you have given us specific consent to use your personal information in a specific purpose.</span><br><br></span></li>
-          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Legitimate Interests:</strong> We may process your data when it is reasonably necessary to achieve our legitimate business interests.</span><br><br></span></li>
-          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Performance of a Contract:&nbsp;</strong>Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.</span><br><br></span></li>
-          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Legal Obligations:</strong> We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).</span><br><br></span></li>
+          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Consent:</strong> We may process your data if you have given us specific consent to use your personal information in a specific purpose.</span><br /><br /></span></li>
+          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Legitimate Interests:</strong> We may process your data when it is reasonably necessary to achieve our legitimate business interests.</span><br /><br /></span></li>
+          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Performance of a Contract:&nbsp;</strong>Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.</span><br /><br /></span></li>
+          <li><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89); font-size: 15px;"><strong>Legal Obligations:</strong> We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).</span><br /><br /></span></li>
           <li><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text"><strong>Vital Interests:</strong> We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.</span></span></li>
         </ul>
         <p style="font-size:15px;">
@@ -1435,7 +1435,7 @@
                 </span>
               </span>
             </span>
-            <br><br>
+            <br /><br />
           </li>
           <li>
             <span style="font-size: 15px;">
@@ -1456,7 +1456,7 @@
             <span style="color: rgb(89, 89, 89);">
               <span class="block-component"><span data-custom-class="body_text" /></span>
             </span>
-            <br><br>
+            <br /><br />
           </li>
           <li>
             <span style="color: rgb(89, 89, 89); font-size: 15px;">
@@ -1477,7 +1477,7 @@
             <span data-custom-class="body_text" />
           </span>
           <p style="font-size: 15px; line-height: 1.5;">
-            <br>
+            <br />
           </p>
           <p id="whoshare" style="font-size:15px;">
             <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">4. WHO WILL YOUR INFORMATION BE SHARED WITH?</span></span></strong></span>
@@ -1493,7 +1493,7 @@
         </div>
         <ul>
           <li>
-            <span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong>Advertising, Direct Marketing, and Lead Generation</strong></span></span></span><br>
+            <span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong>Advertising, Direct Marketing, and Lead Generation</strong></span></span></span><br />
             <span style="font-size: 15px;">
               <span style="color: rgb(89, 89, 89);">
                 <span class="forloop-component"><span data-custom-class="body_text" /></span>
@@ -1594,7 +1594,7 @@
                                           </span>
                                         </div>
                                         <p style="font-size:15px;">
-                                          <br>
+                                          <br />
                                         </p>
                                         <div><span id="cookies" style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></span></strong></span></div>
                                         <p style="font-size: 15px;">
@@ -1631,7 +1631,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <span style="color: rgb(89, 89, 89);"><br></span>
+                                          <span style="color: rgb(89, 89, 89);"><br /></span>
                                         </p>
                                         <p id="inforetain" style="font-size:15px;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">6. HOW LONG DO WE KEEP YOUR INFORMATION?</span></span></strong></span>
@@ -1685,7 +1685,7 @@
                                           </span>
                                         </p>
                                         <div style="line-height: 1.5;">
-                                          <br>
+                                          <br />
                                         </div>
                                         <p id="infosafe" style="font-size:15px;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</span></span></strong></span>
@@ -1719,7 +1719,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <span style="color: rgb(89, 89, 89);"><br></span>
+                                          <span style="color: rgb(89, 89, 89);"><br /></span>
                                         </p>
                                         <p id="privacyrights" style="font-size:15px;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">8. WHAT ARE YOUR PRIVACY RIGHTS?</span></span></strong></span>
@@ -1827,7 +1827,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <br>
+                                          <br />
                                         </p>
                                         <p id="databreach" style="font-size:15px;">
                                           <strong><span data-custom-class="heading_1" style="font-size: 19px;">9. DATA BREACH</span></strong>
@@ -1857,7 +1857,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <br>
+                                          <br />
                                         </p>
                                         <p id="DNT" style="font-size:15px;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">10. CONTROLS FOR DO-NOT-TRACK FEATURES</span></span></strong></span>
@@ -1880,7 +1880,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <br>
+                                          <br />
                                         </p>
                                         <p id="caresidents" style="font-size:15px;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</span></span></strong></span>
@@ -1929,7 +1929,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <span style="color: rgb(89, 89, 89);"><br></span>
+                                          <span style="color: rgb(89, 89, 89);"><br /></span>
                                         </p>
                                         <p id="policyupdates" style="font-size: 15px; line-height: 1.5;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">12. DO WE MAKE UPDATES TO THIS POLICY?</span></span></strong></span>
@@ -1971,7 +1971,7 @@
                                           </span>
                                         </p>
                                         <p style="font-size: 15px; line-height: 1.5;">
-                                          <span style="color: rgb(89, 89, 89);"><br></span>
+                                          <span style="color: rgb(89, 89, 89);"><br /></span>
                                         </p>
                                         <p id="contact" style="font-size:15px;">
                                           <span style="color: rgb(0, 0, 0);"><strong><span style="font-size: 19px;"><span data-custom-class="heading_1">13. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</span></span></strong></span>
@@ -2038,7 +2038,7 @@
                                           <span class="block-component" />
                                         </div>
                                         <p id="contact" style="font-size: 15px; line-height: 1.5;">
-                                          <br>
+                                          <br />
                                         </p>
                                         <p id="contact" style="font-size:15px;">
                                           <strong><span data-custom-class="heading_1">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></strong>

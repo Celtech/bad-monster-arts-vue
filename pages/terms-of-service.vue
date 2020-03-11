@@ -37,7 +37,7 @@
                     <a name="_7m5b3xg56u7y" />
                   </div>
                   <div align="center" class="MsoNormal" data-custom-class="subtitle" style="text-align: left; line-height: 22.5px;">
-                    <br>
+                    <br />
                   </div>
                   <div align="center" class="MsoNormal" data-custom-class="subtitle" style="text-align: left; line-height: 1.5;">
                     <span style="color: rgb(89, 89, 89); font-size: 14.6667px; text-align: justify;">
@@ -53,7 +53,7 @@
                 <span style="font-size: 11pt; line-height: 16.8667px;">&nbsp;</span>
               </div>
               <div align="center" class="MsoNormal" style="line-height: 17.25px; text-align: left;">
-                <span style="font-size: 11pt; line-height: 16.8667px;"><br></span>
+                <span style="font-size: 11pt; line-height: 16.8667px;"><br /></span>
               </div>
             </div>
             <div class="MsoNormal" style="line-height: 115%;">
@@ -155,7 +155,7 @@
               >&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
               <a name="_4rd71iod99ud" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">INTELLECTUAL PROPERTY RIGHTS</span></strong>
@@ -212,7 +212,7 @@
               >&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
               <a name="_vhkegautf00d" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">USER REPRESENTATIONS</span></strong>
@@ -272,7 +272,7 @@
               >&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" style="line-height: 1;">
               <a name="_esuoutkhaf53" />
@@ -303,7 +303,7 @@
                   </div>
                   <div class="MsoNormal" style="line-height: 17.25px;">
                     <span style="font-size: 15px; line-height: 16.8667px; color: rgb(89, 89, 89);">
-                      <div class="MsoNormal" style="color: rgb(10, 54, 90); font-size: 15px; line-height: 1; text-align: left;"><br></div>
+                      <div class="MsoNormal" style="color: rgb(10, 54, 90); font-size: 15px; line-height: 1; text-align: left;"><br /></div>
                     </span>
                   </div>
                 </div>
@@ -712,7 +712,7 @@
                   </span>
                 </div>
                 <div class="MsoNormal" style="line-height: 1.5; margin-left: 20px; text-align: left;">
-                  <br>
+                  <br />
                 </div>
                 <div class="MsoNormal" style="text-align: left; line-height: 1.5;">
                   <a name="_zbbv9tgty199" />
@@ -749,10 +749,10 @@
                         >&nbsp;</span><span style="color: rgb(89, 89, 89); font-family: Arial; font-size: 11pt;">&nbsp;</span>
                       </div>
                       <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5; margin-left: 20px; text-align: left;">
-                        <span style="font-size: 14px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">1. &nbsp;The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.<br>2. &nbsp;You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Use.<br>3. &nbsp;You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Use.<br>4. &nbsp;Your Contributions are not false, inaccurate, or misleading.<br>5. &nbsp;Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.<br>6. &nbsp;Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).<br>7. &nbsp;Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.<br>8. &nbsp;Your Contributions do not advocate the violent overthrow of any government or incite, encourage, or threaten physical harm against another.<br>9. &nbsp;Your Contributions do not violate any applicable law, regulation, or rule.<br>10. &nbsp;Your Contributions do not violate the privacy or publicity rights of any third party.<br>11. &nbsp;Your Contributions do not contain any material that solicits personal information from anyone under the age of 18 or exploits people under the age of 18 in a sexual or violent manner.<br>12. &nbsp;Your Contributions do not violate any federal or state law concerning child pornography, or otherwise intended to protect the health or well-being of minors;<br>13. &nbsp;Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.<br>14. &nbsp;Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Use, or any applicable law or regulation.</span></span>
+                        <span style="font-size: 14px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">1. &nbsp;The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.<br />2. &nbsp;You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Use.<br />3. &nbsp;You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Use.<br />4. &nbsp;Your Contributions are not false, inaccurate, or misleading.<br />5. &nbsp;Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.<br />6. &nbsp;Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).<br />7. &nbsp;Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.<br />8. &nbsp;Your Contributions do not advocate the violent overthrow of any government or incite, encourage, or threaten physical harm against another.<br />9. &nbsp;Your Contributions do not violate any applicable law, regulation, or rule.<br />10. &nbsp;Your Contributions do not violate the privacy or publicity rights of any third party.<br />11. &nbsp;Your Contributions do not contain any material that solicits personal information from anyone under the age of 18 or exploits people under the age of 18 in a sexual or violent manner.<br />12. &nbsp;Your Contributions do not violate any federal or state law concerning child pornography, or otherwise intended to protect the health or well-being of minors;<br />13. &nbsp;Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.<br />14. &nbsp;Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Use, or any applicable law or regulation.</span></span>
                       </div>
                       <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1; text-align: left;">
-                        <br>
+                        <br />
                       </div>
                     </div>
                     <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5; text-align: left;">
@@ -765,7 +765,7 @@
                 <span data-type="conditional-block">
                   <span data-type="body">
                     <div class="MsoNormal" style="line-height: 1.5; text-align: left;">
-                      <br>
+                      <br />
                     </div>
                     &nbsp;
                   </span>
@@ -808,16 +808,16 @@
               </div>
             </div>
             <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;">
-              <span style="font-size: 11pt; line-height: 16.8667px; color: rgb(89, 89, 89);">You and the Site agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings).<br></span>
+              <span style="font-size: 11pt; line-height: 16.8667px; color: rgb(89, 89, 89);">You and the Site agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings).<br /></span>
             </div>
             <div class="MsoNormal" style="line-height: 1;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;">
               <span style="font-size: 11pt; line-height: 16.8667px; color: rgb(89, 89, 89);">By submitting suggestions or other feedback regarding the Site, you agree that we can use and share such feedback for any purpose without compensation to you.&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;">
               <span style="font-size: 11pt; line-height: 16.8667px; color: rgb(89, 89, 89);">
@@ -828,10 +828,10 @@
               </span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" style="line-height: 1;">
               <span id="a378120a-96b1-6fa3-279f-63d5b96341d3" class="block-container if" data-type="if">
@@ -863,7 +863,7 @@
           <strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">SUBMISSIONS</span></strong>
         </div>
         <div style="line-height: 1;">
-          <br>
+          <br />
         </div>
         <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;">
           <span
@@ -875,7 +875,7 @@
           >You acknowledge and agree that any questions, comments, suggestions, ideas, feedback, or other information regarding the Site ("Submissions") provided by you to us are non-confidential and shall become our sole property. We shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of these Submissions for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you. You hereby waive all moral rights to any such Submissions, and you hereby warrant that any such Submissions are original with you or that you have the right to submit such Submissions. You agree there shall be no recourse against us for any alleged or actual infringement or misappropriation of any proprietary right in your Submissions.</span></span>
         </div>
         <div class="MsoNormal" style="line-height: 1.5;">
-          <br>
+          <br />
         </div>
         <div align="center" style="line-height: 1.5;">
           <span id="c954892f-02b9-c743-d1e8-faf0d59a4b70" class="block-container if" data-type="if">
@@ -895,7 +895,7 @@
           <strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">THIRD-PARTY WEBSITE AND CONTENT</span></strong>
         </div>
         <div style="line-height: 1;">
-          <br>
+          <br />
         </div>
         <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;">
           <span
@@ -904,7 +904,7 @@
           >The Site may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Site or any Third-Party Content posted on, available through, or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. If you decide to leave the Site and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Terms of Use no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Site or relating to any applications you use or install from the Site. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases which are exclusively between you and the applicable third party. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites.</span>
         </div>
         <div class="MsoNormal" style="line-height: 1.5;">
-          <br>
+          <br />
         </div>
         <div align="center" style="line-height: 1.5;">
           <span id="c954892f-02b9-c743-d1e8-faf0d59a4b70" class="block-container if" data-type="if">
@@ -964,7 +964,7 @@
               >&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
               <a name="_jugvcvcw0oj9" />
@@ -982,7 +982,7 @@
                     <span
                       style="font-size:11.0pt;line-height:115%;font-family:Arial;
                         Calibri;color:#595959;mso-themecolor:text1;mso-themetint:166;"
-                    ><br></span>
+                    ><br /></span>
                   </div>
                   <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;">
                     <span
@@ -1036,7 +1036,7 @@
           </span>
         </div>
         <div align="center" style="text-align: left; line-height: 1.5;">
-          <span style="font-size: 15px;"><br></span>
+          <span style="font-size: 15px;"><br /></span>
         </div>
         <div align="center" style="text-align: left; line-height: 1;">
           <span class="block-container if" data-type="if">
@@ -1113,7 +1113,7 @@
               >&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
               <a name="_e2dep1hfgltt" /><strong><span style="line-height: 115%; font-family: Arial;"><span style="font-size: 19px;">MODIFICATIONS AND INTERRUPTIONS</span></span></strong>
@@ -1158,13 +1158,13 @@
               >&nbsp;</span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
               <a name="_p6vbf8atcwhs" /><strong><span style="line-height: 115%; font-family: Arial;"><span style="font-size: 19px;">GOVERNING LAW</span></span></strong>
             </div>
             <div class="MsoNormal" style="line-height: 1;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" style="line-height: 115%;">
               <span class="block-component">
@@ -1213,10 +1213,10 @@
               </span>
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" style="line-height: 1.5;">
-              <br>
+              <br />
             </div>
             <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
               <a name="_v5i5tjw62cyw" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">DISPUTE RESOLUTION</span></strong>
@@ -1324,7 +1324,7 @@
                       >&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_mjgzo07ttzx5" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">CORRECTIONS</span></strong>
@@ -1353,7 +1353,7 @@
                       >&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_gvi74blrahf9" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">DISCLAIMER</span></strong>
@@ -1402,7 +1402,7 @@
                       >&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_4pjah3d0455q" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">LIMITATIONS OF LIABILITY</span></strong>
@@ -1433,7 +1433,7 @@
                       >&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_k5ap68aj1dd4" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">INDEMNIFICATION</span></strong>
@@ -1471,7 +1471,7 @@
                       >&nbsp;&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_ftgg17oha0ep" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">USER DATA</span></strong>
@@ -1502,7 +1502,7 @@
                       >&nbsp;&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_dkovrslqodui" /><strong><span style="line-height: 115%; font-family: Arial; font-size: 19px;">ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</span></strong>
@@ -1520,10 +1520,10 @@
                       >Visiting the Site, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SITE. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
                       <span
@@ -1558,7 +1558,7 @@
                       >&nbsp;</span>
                     </div>
                     <div class="MsoNormal" style="line-height: 1.5;">
-                      <br>
+                      <br />
                     </div>
                     <div class="MsoNormal" data-custom-class="heading_1" style="line-height: 1.5;">
                       <a name="_t4pq5cwn486q" /><strong><span style="line-height: 115%; font-family: Arial;"><span style="font-size: 19px;">CONTACT US</span>&nbsp;</span></strong>
@@ -1618,7 +1618,7 @@
                         <span class="block-container question question-in-editor" data-id="fdc2b5b8-c95f-244b-23a7-287f82541348" data-type="question"><strong>support@badmonsterarts.com</strong></span>
                       </span>
                     </div>
-                    <br>
+                    <br />
                   </span>
                 </span>
               </span>

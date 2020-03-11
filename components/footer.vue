@@ -5,9 +5,12 @@
         <h2 class="p-0 m-0">
           Join our newsletter
         </h2>
-        <small class="mb-3">Sign up to get the latest updates on our projects.</small>
 
-        <b-form @submit="onSubmit" inline class="text-center mt-2">
+        <small class="mb-3">
+          Sign up to get the latest updates on our projects.
+        </small>
+
+        <b-form inline class="text-center mt-2" @submit="onSubmit">
           <div class="form-wrapper m-auto">
             <b-input
               id="name"
@@ -21,8 +24,8 @@
             <label class="sr-only" for="name">Full Name</label>
 
             <b-input
-              v-model="email"
               id="email"
+              v-model="email"
               type="email"
               name="email"
               placeholder="email@example.com"
@@ -76,144 +79,157 @@
 </template>
 
 <script>
-
 export default {
-  components: {
-  },
-  data () {
+  components: {},
+  data() {
     return {
       name: '',
       email: ''
     }
   },
   methods: {
-    async onSubmit (e) {
+    async onSubmit(e) {
       e.preventDefault()
 
       const data = {
         email_address: this.email,
         status: 'subscribed',
         merge_fields: {
-          FNAME: this.name.split(' ').slice(0, -1).join(' '),
-          LNAME: this.name.split(' ').slice(-1).join(' ')
+          FNAME: this.name
+            .split(' ')
+            .slice(0, -1)
+            .join(' '),
+          LNAME: this.name
+            .split(' ')
+            .slice(-1)
+            .join(' ')
         }
       }
-      await this.$axios.$post('/mail_chimp/', data, {
-        auth: {
-          username: 'BMA',
-          password: process.env.MAILCHIMP_API_KEY
-        }
-      }).then((response) => {
-        this.$bvToast.toast(`Thank you for subscribing to our mailing list!`, {
-          title: 'Success',
-          autoHideDelay: 5000
-        })
-
-        this.name = null
-        this.email = null
-      }).catch((error) => {
-        if (error.response) {
-          this.$sentry.captureException(error)
-
-          if (error.response.data.title === 'Member Exists') {
-            this.$bvToast.toast(`You're already subscribed to our mailing list!`, {
-              title: 'Error',
-              variant: 'danger',
-              autoHideDelay: 5000
-            })
-          } else {
-            this.$bvToast.toast(`An unknown error has occurred!`, {
-              title: 'Error',
-              variant: 'danger',
-              autoHideDelay: 5000
-            })
+      await this.$axios
+        .$post('/mail_chimp/', data, {
+          auth: {
+            username: 'BMA',
+            password: process.env.MAILCHIMP_API_KEY
           }
+        })
+        .then(response => {
+          this.$bvToast.toast(
+            `Thank you for subscribing to our mailing list!`,
+            {
+              title: 'Success',
+              autoHideDelay: 5000
+            }
+          )
 
           this.name = null
           this.email = null
-        }
-      })
+        })
+        .catch(error => {
+          if (error.response) {
+            this.$sentry.captureException(error)
+
+            if (error.response.data.title === 'Member Exists') {
+              this.$bvToast.toast(
+                `You're already subscribed to our mailing list!`,
+                {
+                  title: 'Error',
+                  variant: 'danger',
+                  autoHideDelay: 5000
+                }
+              )
+            } else {
+              this.$bvToast.toast(`An unknown error has occurred!`, {
+                title: 'Error',
+                variant: 'danger',
+                autoHideDelay: 5000
+              })
+            }
+
+            this.name = null
+            this.email = null
+          }
+        })
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: #31355e;
-    padding: 0 0 20px 0;
-    color: #ffffff;
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #31355e;
+  padding: 0 0 20px 0;
+  color: #ffffff;
 
-    .news-letter {
-      background: #689bd2;
-      padding: 20px 0;
-      margin-bottom: 20px;
+  .news-letter {
+    background: #689bd2;
+    padding: 20px 0;
+    margin-bottom: 20px;
 
-      form {
-        .form-wrapper {
-          @media (max-width: 768px) {
+    form {
+      .form-wrapper {
+        @media (max-width: 768px) {
+          width: 100%;
+
+          input {
             width: 100%;
-
-            input {
-              width: 100%;
-              margin-bottom: 5px;
-            }
-
-            button {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
-    .copyright {
-      text-align: right;
-
-      @media (max-width: 768px) {
-        text-align: center;
-      }
-    }
-
-    nav {
-      text-align: left;
-
-      @media (max-width: 768px) {
-        text-align: center;
-      }
-
-      @media (max-width: 450px) {
-        font-size: 12px;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-          display: inline-block;
-          padding: 0;
-          margin: 0;
-
-          a{
-            color: #ffffff;
-
-            &:hover {
-              text-decoration: underline;
-            }
+            margin-bottom: 5px;
           }
 
-          &:not(:last-child)::after {
-            content: '|';
-            margin-left: 4px;
+          button {
+            width: 100%;
           }
         }
       }
     }
   }
+
+  .copyright {
+    text-align: right;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  nav {
+    text-align: left;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        a {
+          color: #ffffff;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &:not(:last-child)::after {
+          content: '|';
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
 </style>

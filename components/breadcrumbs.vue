@@ -19,12 +19,11 @@
 </template>
 
 <script>
-
 export default {
   computed: {
-    crumbs () {
+    crumbs() {
       const crumbs = []
-      this.$route.matched.forEach((item) => {
+      this.$route.matched.forEach(item => {
         if (item.name !== 'index') {
           crumbs.push(item)
         }
@@ -37,20 +36,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .breadcrumb-wrapper {
-    background: #393e46;
+.breadcrumb-wrapper {
+  background: #393e46;
 
-    a{
-      color: #EEEEEE;
-      &:hover {
-        color: #2BCED6;
-        text-decoration: none;
-      }
-    }
-
-    .no-bg {
-      background: none !important;
-      text-transform: capitalize;
+  a {
+    color: #eeeeee;
+    &:hover {
+      color: #2bced6;
+      text-decoration: none;
     }
   }
+
+  .no-bg {
+    background: none !important;
+    text-transform: capitalize;
+  }
+}
 </style>

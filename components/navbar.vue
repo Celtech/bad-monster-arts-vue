@@ -1,11 +1,21 @@
 <template>
   <div class="nav-wrapper">
     <div class="container">
-      <b-navbar toggleable="lg" type="light" variant="light" class="navbar-light">
+      <b-navbar
+        toggleable="lg"
+        type="light"
+        variant="light"
+        class="navbar-light"
+      >
         <b-navbar-brand>
           <nuxt-link to="/">
             <div class="avatar-wrapper">
-              <img src="~/assets/logo.png" class="avatar" loading="lazy" alt="Main Logo">
+              <img
+                src="~/assets/logo.png"
+                class="avatar"
+                loading="lazy"
+                alt="Main Logo"
+              />
             </div>
           </nuxt-link>
         </b-navbar-brand>
@@ -38,19 +48,31 @@
                 </b-nav-item>
               </b-navbar-nav>
             </client-only>
-            <b-nav-item href="https://twitter.com/badmonsterarts" target="_blank">
+            <b-nav-item
+              href="https://twitter.com/badmonsterarts"
+              target="_blank"
+            >
               <font-awesome-icon :icon="['fab', 'twitter']" />
               <span class="social-title">Twitter</span>
             </b-nav-item>
-            <b-nav-item href="https://www.instagram.com/badmonsterarts/" target="_blank">
+            <b-nav-item
+              href="https://www.instagram.com/badmonsterarts/"
+              target="_blank"
+            >
               <font-awesome-icon :icon="['fab', 'instagram']" />
               <span class="social-title">Instagram</span>
             </b-nav-item>
-            <b-nav-item href="https://twitter.com/badmonsterarts" target="_blank">
+            <b-nav-item
+              href="https://twitter.com/badmonsterarts"
+              target="_blank"
+            >
               <font-awesome-icon :icon="['fab', 'youtube']" />
               <span class="social-title">Youtube</span>
             </b-nav-item>
-            <b-nav-item href="https://twitter.com/badmonsterarts" target="_blank">
+            <b-nav-item
+              href="https://twitter.com/badmonsterarts"
+              target="_blank"
+            >
               <font-awesome-icon v-if="1" :icon="['fab', 'facebook-square']" />
               <span class="social-title">Facebook</span>
             </b-nav-item>
@@ -62,55 +84,55 @@
 </template>
 
 <style lang="scss" scoped>
-  .nav-wrapper {
+.nav-wrapper {
+  background: #ffffff !important;
+  font-size: 18px !important;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+
+  .navbar-light {
     background: #ffffff !important;
-    font-size: 18px !important;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    color: #31355e !important;
+    padding: 0 0;
+    font-weight: bold;
 
-    .navbar-light {
-      background: #ffffff !important;
-      color: #31355e !important;
-      padding: 0 0;
-      font-weight: bold;
+    .avatar-wrapper {
+      width: 165px;
+      height: 75px;
+      overflow: hidden;
 
-      .avatar-wrapper {
-          width: 165px;
-          height: 75px;
-          overflow: hidden;
+      .avatar {
+        width: auto;
+        height: 100%;
+      }
+    }
 
-          .avatar {
-            width: auto;
-            height: 100%;
+    .navbar-nav {
+      a {
+        color: #31355e;
+
+        .social-title {
+          display: none;
+
+          @media (max-width: 768px) {
+            display: inline-block;
           }
         }
 
-      .navbar-nav {
-        a {
-          color: #31355e;
+        .svg-inline--fa {
+          display: none;
 
-          .social-title {
-            display: none;
-
-            @media (max-width: 768px) {
-              display: inline-block;
-            }
+          @media (min-width: 768px) {
+            display: inline-block;
           }
+        }
 
-          .svg-inline--fa {
-            display: none;
-
-            @media (min-width: 768px) {
-              display: inline-block;
-            }
-          }
-
-          &:hover {
-            color: #689bd2;
-            text-decoration: none;
-          }
+        &:hover {
+          color: #689bd2;
+          text-decoration: none;
         }
       }
     }
   }
+}
 </style>

@@ -9,9 +9,17 @@
           Marketing Specialist
         </b-button>
       </b-card-header>
-      <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+      <b-collapse
+        id="accordion-1"
+        visible
+        accordion="my-accordion"
+        role="tabpanel"
+      >
         <b-card-body>
-          <b-card-text>I start opened because <code>visible</code> is <code>true</code></b-card-text>
+          <b-card-text>
+            I start opened because <code>visible</code> is
+            <code>true</code>
+          </b-card-text>
           <b-card-text>{{ text }}</b-card-text>
         </b-card-body>
       </b-collapse>
@@ -64,7 +72,7 @@
 <script>
 export default {
   name: 'CareersVue',
-  data () {
+  data() {
     return {
       text: `
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -81,6 +89,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

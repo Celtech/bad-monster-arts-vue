@@ -1,4 +1,3 @@
-
 require('dotenv').config()
 
 export default {
@@ -12,11 +11,23 @@ export default {
       { lang: 'en-us' },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/images/favicon/favicon.ico'
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: true
+      },
       { rel: 'preconnect', href: 'https://www.google.com', crossorigin: true },
       { rel: 'preconnect', href: 'https://www.gstatic.com', crossorigin: true }
     ]
@@ -24,10 +35,7 @@ export default {
 
   loading: { color: '#fff' },
 
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/dotenv'
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/dotenv'],
 
   modules: [
     'bootstrap-vue/nuxt',
@@ -40,7 +48,8 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/proxy',
     [
-      'nuxt-fontawesome', {
+      'nuxt-fontawesome',
+      {
         imports: [
           {
             set: '@fortawesome/free-solid-svg-icons',
@@ -53,15 +62,18 @@ export default {
         ]
       }
     ],
-    ['nuxt-social-meta', {
-      url: 'www.badmonsterarts.com',
-      title: 'Bad Monster Arts | Indie Game Studio',
-      description: 'Description site',
-      img: 'Link to image in static folder',
-      locale: 'en_US',
-      twitter: '@BadMonsterArts',
-      themeColor: '#ff0000'
-    }]
+    [
+      'nuxt-social-meta',
+      {
+        url: 'www.badmonsterarts.com',
+        title: 'Bad Monster Arts | Indie Game Studio',
+        description: 'Description site',
+        img: 'Link to image in static folder',
+        locale: 'en_US',
+        twitter: '@BadMonsterArts',
+        themeColor: '#ff0000'
+      }
+    ]
   ],
 
   recaptcha: {
@@ -127,7 +139,15 @@ export default {
   },
 
   build: {
-    extend (config, ctx) {
+    extend(config, ctx) {
+      if (ctx.isDev) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
     }
   }
 }
