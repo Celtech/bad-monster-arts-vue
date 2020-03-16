@@ -59,6 +59,7 @@ export default {
   background: #ffffff;
   border-top: 5px solid #31355e;
   text-align: right;
+  z-index: 9999;
 
   [class*='col'] {
     vertical-align: middle;
