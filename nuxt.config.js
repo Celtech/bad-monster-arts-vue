@@ -43,11 +43,12 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/dotenv',
-    '@nuxtjs/google-analytics',
-    {
-      id: 'UA-160645146-1'
-    }
+    '@nuxtjs/google-analytics'
   ],
+
+  googleAnalytics: {
+    id: 'UA-160645146-1'
+  },
 
   modules: [
     'bootstrap-vue/nuxt',
