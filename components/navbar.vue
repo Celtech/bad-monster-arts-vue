@@ -10,8 +10,13 @@
         <b-navbar-brand>
           <nuxt-link to="/">
             <div class="logo-wrapper">
-              <svg class="logo" viewBox="0 0 256 75" xmlns="http://www.w3.org/2000/svg" role="img">
-                <use
+              <svg
+                class="logo"
+                viewBox="0 0 256 75"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+              >
+                <image
                   class="logo"
                   xlink:href="https://cdn.badmonsterarts.com/main_logo.svg"
                   src="https://cdn.badmonsterarts.com/main_logo.png"
