@@ -27,21 +27,31 @@
     </ul>
 
     <h4>Our Logos</h4>
-    <img
-      src="~assets/logo.png"
-      alt="Main Logo"
-      style="height: 150px; width: auto; max-width: 100%;"
-    />
-    <img
-      src="~assets/logo_v2.png"
-      alt="Alt Logo"
-      style="height: 200px; width: auto"
-    />
-    <img
-      src="~assets/logo_v3.png"
-      alt="Alt No Text Logo"
-      style="height: 200px; width: auto"
-    />
+    <b-row>
+      <b-col lg="4" md="4" sm="12">
+        <img
+          src="https://cdn.badmonsterarts.com/main_logo.png"
+          alt="Main Logo"
+          style="width: 100%; height: auto"
+        />
+      </b-col>
+
+      <b-col lg="4" md="4" sm="12">
+        <img
+          src="https://cdn.badmonsterarts.com/logo_v2.png"
+          alt="Alt Logo"
+          style="height: 200px; width: auto"
+        />
+      </b-col>
+
+      <b-col lg="4" md="4" sm="12">
+        <img
+          src="https://cdn.badmonsterarts.com/logo_v3.png"
+          alt="Alt No Text Logo"
+          style="height: 200px; width: auto"
+        />
+      </b-col>
+    </b-row>
 
     <h4>Please Don’t</h4>
     <ul>
@@ -80,5 +90,10 @@ export default {
   @media (max-width: 768px) {
     display: block;
   }
+}
+
+img {
+  display: block;
+  margin: auto;
 }
 </style>

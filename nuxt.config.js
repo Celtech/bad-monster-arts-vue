@@ -108,7 +108,7 @@ export default {
 
   pwa: {
     icon: {
-      iconFileName: 'https://cdn.badmonsterarts.com/apple-touch-icon.png'
+      iconFileName: '/apple-touch-icon.png'
     },
     meta: {
       ogSiteName: 'Bad Monster Arts'

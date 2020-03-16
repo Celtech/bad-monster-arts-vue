@@ -17,13 +17,6 @@
                   src="https://cdn.badmonsterarts.com/main_logo.png"
                 />
               </svg>
-
-              <!--              <img-->
-              <!--                src="~/assets/logo.png"-->
-              <!--                class="avatar"-->
-              <!--                loading="lazy"-->
-              <!--                alt="Main Logo"-->
-              <!--              />-->
             </div>
           </nuxt-link>
         </b-navbar-brand>
