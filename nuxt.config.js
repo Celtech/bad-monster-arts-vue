@@ -21,7 +21,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/images/favicon/favicon.ico'
+        href: 'https://cdn.badmonsterarts.com/favicon.ico'
       },
       {
         rel: 'preconnect',
@@ -108,7 +108,7 @@ export default {
 
   pwa: {
     icon: {
-      iconFileName: '/images/favicon/apple-touch-icon.png'
+      iconFileName: 'https://cdn.badmonsterarts.com/apple-touch-icon.png'
     },
     meta: {
       ogSiteName: 'Bad Monster Arts'

@@ -9,13 +9,21 @@
       >
         <b-navbar-brand>
           <nuxt-link to="/">
-            <div class="avatar-wrapper">
-              <img
-                src="~/assets/logo.png"
-                class="avatar"
-                loading="lazy"
-                alt="Main Logo"
-              />
+            <div class="logo-wrapper">
+              <svg class="logo">
+                <image
+                  class="logo"
+                  xlink:href="https://cdn.badmonsterarts.com/main_logo.svg"
+                  src="https://cdn.badmonsterarts.com/main_logo.png"
+                />
+              </svg>
+
+              <!--              <img-->
+              <!--                src="~/assets/logo.png"-->
+              <!--                class="avatar"-->
+              <!--                loading="lazy"-->
+              <!--                alt="Main Logo"-->
+              <!--              />-->
             </div>
           </nuxt-link>
         </b-navbar-brand>
@@ -96,12 +104,12 @@
     padding: 0 0;
     font-weight: bold;
 
-    .avatar-wrapper {
-      width: 165px;
+    .logo-wrapper {
+      width: 256px;
       height: 75px;
       overflow: hidden;
 
-      .avatar {
+      .logo {
         width: auto;
         height: 100%;
       }
