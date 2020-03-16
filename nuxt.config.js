@@ -34,13 +34,20 @@ export default {
         crossorigin: true
       },
       { rel: 'preconnect', href: 'https://www.google.com', crossorigin: true },
-      { rel: 'preconnect', href: 'https://www.gstatic.com', crossorigin: true },
+      { rel: 'preconnect', href: 'https://www.gstatic.com', crossorigin: true }
     ]
   },
 
   loading: { color: '#fff' },
 
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/dotenv'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/dotenv',
+    '@nuxtjs/google-analytics',
+    {
+      id: 'UA-160645146-1'
+    }
+  ],
 
   modules: [
     'bootstrap-vue/nuxt',
