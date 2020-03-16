@@ -8,7 +8,7 @@
       <div class="post-wrapper">
         <h2>{{ post.title }}</h2>
         <small>
-          {{ post.name }} | 13 December, 2019 |
+          {{ post.name }} | {{ new Date(post.publishedAt).toDateString() }} |
           {{ categoriesToString(post.categories) }}
         </small>
 
@@ -36,7 +36,7 @@ export default {
   },
   async mounted() {
     const query =
-      '*[_type == "post"]{title, "name": author->name, "categories": categories[]->title, body}'
+      '*[_type == "post" && publishedAt < now()]|order(publishedAt desc){title, "name": author->name, "categories": categories[]->title, body, publishedAt}[0...5]'
     this.posts = await this.fetchPosts(query)
   },
   methods: {
