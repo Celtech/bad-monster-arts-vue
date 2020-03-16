@@ -47,7 +47,10 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'UA-160645146-1'
+    id: 'UA-160645146-1',
+    debug: {
+      sendHitTask: process.env.NODE_ENV !== 'development'
+    }
   },
 
   modules: [
