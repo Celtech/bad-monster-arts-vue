@@ -108,7 +108,7 @@ export default {
 
   pwa: {
     icon: {
-      iconFileName: '/android-chrome-192x192.png'
+      iconFileName: 'android-chrome-512x512.png'
     },
     meta: {
       ogSiteName: 'Bad Monster Arts'
