@@ -86,7 +86,7 @@ export default {
         title: 'Bad Monster Arts | Indie Game Studio',
         description:
           'Indie Game studio with a passion for building beautiful games.',
-        img: 'ogimg.jpg',
+        img: 'https://cdn.badmonsterarts.com/ogimg.jpg',
         locale: 'en_US',
         twitter: '@BadMonsterArts',
         themeColor: '#31355e'
