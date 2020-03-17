@@ -27,10 +27,22 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="9" order-lg="1" order-md="1" order-sm="2" order="2">
+      <b-col lg="9" order-lg="1" order-md="2" order-sm="2" order="2">
         <blog />
+
+        <b-pagination-nav
+          :link-gen="linkGen"
+          :number-of-pages="10"
+          use-router
+        />
+
+        <b-form-select
+          :options="perPage"
+          style="width: 55px; float: right; margin-left: 5px; display: inline-block; height: 38px"
+          size="sm"
+        />
       </b-col>
-      <b-col lg="3" order-lg="2" order-md="2" order-sm="1" order="1">
+      <b-col lg="3" order-lg="2" order-md="1" order-sm="1" order="1">
         <article>
           <h5>Search Posts</h5>
           <b-input-group>
@@ -44,24 +56,6 @@
         </article>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col lg="6">
-        <b-pagination-nav
-          class="custom-pagination"
-          :link-gen="linkGen"
-          :number-of-pages="10"
-          use-router
-        />
-      </b-col>
-      <b-col lg="3" style="text-align: right">
-        <label>Per Page</label>
-        <b-form-select
-          style="width: 100px; float: right; margin-left: 5px;"
-          size="sm"
-        />
-      </b-col>
-      <b-col lg="3" />
-    </b-row>
   </div>
 </template>
 
@@ -71,6 +65,11 @@ import blog from '../components/blog'
 export default {
   components: {
     blog
+  },
+  data() {
+    return {
+      perPage: ['5', '10', '25']
+    }
   },
   methods: {
     linkGen(pageNum) {
@@ -90,5 +89,9 @@ export default {
   &:focus {
     outline: none;
   }
+}
+
+nav {
+  display: inline-block;
 }
 </style>

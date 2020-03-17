@@ -29,7 +29,7 @@
             <client-only>
               <b-navbar-nav>
                 <b-nav-item>
-                  <nuxt-link to="/">
+                  <nuxt-link to="/about">
                     About Us
                   </nuxt-link>
                 </b-nav-item>

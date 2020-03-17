@@ -27,9 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/styles/custom.scss';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif !important;
@@ -43,6 +40,18 @@ html {
 
   body {
     background: #f1f1f1 !important;
+
+    .page-item .page-link {
+      color: #31355e;
+      background-color: #ffffff !important;
+      border-color: #dee2e6 !important;
+    }
+
+    .page-item.active .page-link {
+      color: #ffffff;
+      background-color: #31355e !important;
+      border-color: #31355e !important;
+    }
 
     .navbar-light .navbar-nav .nav-link {
       color: #31355e;
