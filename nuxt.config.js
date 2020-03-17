@@ -11,10 +11,12 @@ export default {
       { lang: 'en-us' },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'twitter:card', content: 'summary_large_image' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Indie Game studio with a passion for building beautiful games.'
+        content:
+          'Indie Game studio with a passion for building beautiful games.'
       }
     ],
     link: [
