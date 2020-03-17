@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'PostVue'
+  name: 'IdVue'
 }
 </script>
 
