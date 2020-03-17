@@ -14,7 +14,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Indie Game studio with a passion for building beautiful games.'
       }
     ],
     link: [
