@@ -10,11 +10,7 @@
         <b-navbar-brand>
           <nuxt-link to="/">
             <div class="logo-wrapper">
-              <svg
-                viewBox="0 0 256 75"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-              >
+              <svg viewBox="0 0 679 200">
                 <image
                   width="100%"
                   height="100%"

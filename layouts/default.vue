@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/styles/custom.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif !important;

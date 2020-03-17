@@ -27,38 +27,40 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="9">
+      <b-col lg="9" order-lg="1" order-md="1" order-sm="2" order="2">
         <blog />
       </b-col>
-      <b-col lg="3">
+      <b-col lg="3" order-lg="2" order-md="2" order-sm="1" order="1">
         <article>
-          <img
-            src="https://teamcherry.com.au/wp-content/uploads/indiebox_large.jpg"
-            alt=""
-            loading="lazy"
-          />
-          <div class="post-wrapper">
-            <h2>This is my post</h2>
-            <small>Ari | 13 December, 2019 | Hollow Knight, Silksong</small>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididut amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididut amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididut amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididut amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididut amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#">Keep Reading</a>
-          </div>
+          <h5>Search Posts</h5>
+          <b-input-group>
+            <template v-slot:prepend>
+              <b-button variant="primary">
+                <font-awesome-icon :icon="['fas', 'search']" />
+              </b-button>
+            </template>
+            <b-form-input type="search" placeholder="Search" />
+          </b-input-group>
         </article>
       </b-col>
+    </b-row>
+    <b-row>
+      <b-col lg="6">
+        <b-pagination-nav
+          class="custom-pagination"
+          :link-gen="linkGen"
+          :number-of-pages="10"
+          use-router
+        />
+      </b-col>
+      <b-col lg="3" style="text-align: right">
+        <label>Per Page</label>
+        <b-form-select
+          style="width: 100px; float: right; margin-left: 5px;"
+          size="sm"
+        />
+      </b-col>
+      <b-col lg="3" />
     </b-row>
   </div>
 </template>
@@ -69,6 +71,11 @@ import blog from '../components/blog'
 export default {
   components: {
     blog
+  },
+  methods: {
+    linkGen(pageNum) {
+      return pageNum === 1 ? '?' : `?page=${pageNum}`
+    }
   }
 }
 </script>
