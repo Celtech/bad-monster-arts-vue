@@ -1,13 +1,12 @@
 <template>
-  <div>
-    Test
-  </div>
+  <div />
 </template>
 
 <script>
 export default {
-  name: 'IndexVue',
+  name: 'IdVue',
   validate({ params }) {
+    // Must be a number
     return /^\d+$/.test(params.id)
   }
 }
