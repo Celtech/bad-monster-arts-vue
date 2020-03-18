@@ -3,10 +3,12 @@
     <article v-for="(post, index) in posts.data" :key="index">
       <img v-if="post.title_image" :src="post.title_image" alt="" />
       <div class="post-wrapper">
-        <h2>{{ post.title }}</h2>
+        <h2>
+          {{ post.title }}
+        </h2>
         <small>
-          {{ post.author }} | {{ new Date(post.created_at).toLocaleString() }} |
-          cat
+          {{ post.author }} | {{ post.created_at }} |
+          {{ post.categories }}
         </small>
 
         <div v-html="post.body" />

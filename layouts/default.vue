@@ -90,10 +90,18 @@ html {
 
           h1 {
             margin: auto;
+            color: #31355e;
+          }
+
+          h2 {
+            margin: auto;
+            color: #31355e;
           }
 
           small {
             color: #6c757d !important;
+            display: block;
+            margin-bottom: 1rem;
           }
         }
       }
