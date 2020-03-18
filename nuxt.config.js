@@ -64,7 +64,6 @@ export default {
     '@nuxtjs/recaptcha',
     '@nuxtjs/robots',
     '@nuxtjs/proxy',
-    'nuxt-sanity',
     [
       'nuxt-fontawesome',
       {
@@ -155,6 +154,13 @@ export default {
       target: process.env.MAILCHIMP_DNS,
       pathRewrite: {
         '^/mail_chimp/': ''
+      },
+      changeOrigin: true
+    },
+    '/api/': {
+      target: process.env.API_DNS,
+      pathRewrite: {
+        '^/api/': ''
       },
       changeOrigin: true
     }

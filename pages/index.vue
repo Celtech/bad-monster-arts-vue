@@ -29,18 +29,6 @@
     <b-row>
       <b-col lg="9" order-lg="1" order-md="2" order-sm="2" order="2">
         <blog />
-
-        <b-pagination-nav
-          :link-gen="linkGen"
-          :number-of-pages="10"
-          use-router
-        />
-
-        <b-form-select
-          :options="perPage"
-          style="width: 55px; float: right; margin-left: 5px; display: inline-block; height: 38px"
-          size="sm"
-        />
       </b-col>
       <b-col lg="3" order-lg="2" order-md="1" order-sm="1" order="1">
         <article>
@@ -66,15 +54,12 @@ export default {
   components: {
     blog
   },
-  data() {
-    return {
-      perPage: ['5', '10', '25']
-    }
-  },
-  methods: {
-    linkGen(pageNum) {
-      return pageNum === 1 ? '?' : `?page=${pageNum}`
-    }
+  watchQuery: ['page'],
+  fetch({ app, store, route }) {
+    const page = route.query.page ?? 1
+    return app.$axios.$get('/api/posts?page=' + page).then(res => {
+      store.commit('blog/setPosts', res)
+    })
   }
 }
 </script>

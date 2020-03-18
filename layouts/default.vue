@@ -95,17 +95,6 @@ html {
           small {
             color: #6c757d !important;
           }
-
-          p {
-            display: block;
-            display: -webkit-box;
-            max-height: 75px;
-            max-width: 100%;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-          }
         }
       }
     }
