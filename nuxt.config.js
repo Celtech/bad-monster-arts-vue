@@ -171,8 +171,6 @@ export default {
     Disallow: ''
   },
 
-  plugins: [{ src: '~/plugins/amplify.js', mode: 'client' }],
-
   build: {
     extend(config, ctx) {
       if (ctx.isDev) {
