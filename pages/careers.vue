@@ -17,8 +17,7 @@
       >
         <b-card-body>
           <b-card-text>
-            I start opened because <code>visible</code> is
-            <code>true</code>
+            Fake job roles here!
           </b-card-text>
           <b-card-text>{{ text }}</b-card-text>
         </b-card-body>
