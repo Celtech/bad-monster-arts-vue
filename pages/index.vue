@@ -56,10 +56,10 @@ export default {
   },
   watchQuery: ['page'],
   fetch({ app, store, route }) {
-    const page = route.query.page ?? 1
-    return app.$axios.$get('/api/posts?page=' + page).then(res => {
-      store.commit('blog/setPosts', res)
-    })
+    // const page = route.query.page ?? 1
+    // return app.$axios.$get('/api/posts?page=' + page).then(res => {
+    //   store.commit('blog/setPosts', res)
+    // })
   }
 }
 </script>

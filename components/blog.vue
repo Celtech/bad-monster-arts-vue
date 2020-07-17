@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="posts">
     <article v-for="(post, index) in posts.data" :key="index">
       <img v-if="post.title_image" :src="post.title_image" alt="" />
       <div class="post-wrapper">
