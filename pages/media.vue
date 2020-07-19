@@ -30,7 +30,7 @@
     <b-row>
       <b-col lg="4" md="4" sm="12">
         <img
-          src="~/assets/logo.png"
+          src="https://cdn.badmonsterarts.com/logo.png"
           alt="Main Logo"
           style="width: 100%; height: auto"
         />
@@ -38,7 +38,7 @@
 
       <b-col lg="4" md="4" sm="12">
         <img
-          src="~/assets/logo_v2.png"
+          src="https://cdn.badmonsterarts.com/logo_v2.png"
           alt="Alt Logo"
           style="height: 200px; width: auto"
         />
@@ -46,7 +46,7 @@
 
       <b-col lg="4" md="4" sm="12">
         <img
-          src="~/assets/logo_v3.png"
+          src="https://cdn.badmonsterarts.com/logo_v3.png"
           alt="Alt No Text Logo"
           style="height: 200px; width: auto"
         />

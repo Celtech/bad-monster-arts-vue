@@ -14,8 +14,8 @@
                 <image
                   width="100%"
                   height="100%"
-                  xlink:href="~/assets/logo.svg"
-                  src="~/assets/logo.png"
+                  xlink:href="https://cdn.badmonsterarts.com/logo.svg"
+                  src="https://cdn.badmonsterarts.com/logo.png"
                 />
               </svg>
             </div>
