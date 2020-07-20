@@ -94,11 +94,6 @@ export default {
     ]
   ],
 
-  sanity: {
-    projectId: 'boiuafoj', // required
-    dataset: 'production' // required
-  },
-
   recaptcha: {
     siteKey: process.env.RECAPTCHA_PUBLIC,
     size: 'normal',

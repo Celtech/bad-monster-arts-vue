@@ -3,7 +3,7 @@
     <a
       :href="
         `http://www.facebook.com/sharer.php?u=` +
-          `https://badmonsterarts.com/posts/` +
+          `https://badmonsterarts.com/post/` +
           post +
           `&amp;t=` +
           encodeURI(title)
@@ -16,7 +16,7 @@
 
     <a
       :href="
-        `https://twitter.com/share?url=https://badmonsterarts.com/posts/` +
+        `https://twitter.com/share?url=https://badmonsterarts.com/post/` +
           post +
           `&amp;text=` +
           title +
@@ -30,7 +30,7 @@
 
     <a
       :href="
-        `http://reddit.com/submit?url=https://badmonsterarts.com/posts/` +
+        `http://reddit.com/submit?url=https://badmonsterarts.com/post/` +
           post +
           `&amp;title=` +
           title
@@ -45,7 +45,7 @@
       :href="
         `mailto:?Subject=` +
           title +
-          `&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://badmonsterarts.com/posts/` +
+          `&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://badmonsterarts.com/post/` +
           post
       "
       target="_blank"
