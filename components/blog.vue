@@ -16,6 +16,8 @@
           <nuxt-link :to="`/post/` + post.id">
             Keep Reading
           </nuxt-link>
+
+          <social-buttons :post="post.id" :title="post.title" />
         </div>
       </article>
 
@@ -59,6 +61,8 @@
               here!
             </a>
           </p>
+
+          <social-buttons :post="0" title="A word from the developer" />
         </div>
       </article>
     </div>
@@ -67,10 +71,11 @@
 
 <script>
 import { mapState } from 'vuex'
+import socialButtons from './social-buttons'
 
 export default {
   name: 'BlogVue',
-  components: {},
+  components: { socialButtons },
   computed: {
     ...mapState({
       posts: state => state.blog.posts
@@ -92,5 +97,10 @@ export default {
 }
 article {
   padding: 0 !important;
+}
+
+.social-button {
+  padding: 5px 10px;
+  background: #689bd2;
 }
 </style>

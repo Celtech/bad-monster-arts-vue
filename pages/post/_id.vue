@@ -14,14 +14,19 @@
         </small>
 
         <div v-html="posts.data.body" />
+
+        <social-buttons :post="posts.data.id" :title="posts.data.title" />
       </div>
     </article>
   </div>
 </template>
 
 <script>
+import socialButtons from '../../components/social-buttons'
+
 export default {
   name: 'IdVue',
+  components: { socialButtons },
   validate({ params }) {
     // Must be a number
     return /^\d+$/.test(params.id)
