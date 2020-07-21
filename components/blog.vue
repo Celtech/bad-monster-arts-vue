@@ -15,8 +15,6 @@
         <nuxt-link :to="`/post/` + post.id">
           Keep Reading
         </nuxt-link>
-
-        <social-buttons :post="post.id" :title="post.title" />
       </div>
     </article>
 
@@ -27,15 +25,20 @@
       use-router
     />
   </div>
+  <div v-else>
+    <article>
+      <div class="post-wrapper">
+        There are no posts at this time!
+      </div>
+    </article>
+  </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
-import socialButtons from './social-buttons'
 
 export default {
   name: 'BlogVue',
-  components: { socialButtons },
   computed: {
     ...mapState({
       posts: state => state.blog.posts

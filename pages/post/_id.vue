@@ -15,18 +15,20 @@
 
         <div v-html="posts.data.body" />
 
-        <social-buttons :post="posts.data.id" :title="posts.data.title" />
+        <article-rating />
+        <blog-comments />
       </div>
     </article>
   </div>
 </template>
 
 <script>
-import socialButtons from '../../components/social-buttons'
+import articleRating from '../../components/blog/article-rating'
+import blogComments from '../../components/blog/comments/blog-comments'
 
 export default {
   name: 'IdVue',
-  components: { socialButtons },
+  components: { articleRating, blogComments },
   validate({ params }) {
     // Must be a number
     return /^\d+$/.test(params.id)
