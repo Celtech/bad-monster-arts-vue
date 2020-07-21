@@ -2,7 +2,7 @@
   <div class="blog-comments">
     <b-row class="header-row" no-gutters>
       <b-col lg="4" md="4" sm="12">
-        <strong>2 Comment(s)</strong>
+        <strong>{{ commentCount }} Comment(s)</strong>
       </b-col>
       <b-col lg="8" md="8" sm="12">
         <social-buttons class="float-right" />
@@ -12,9 +12,18 @@
     <b-row>
       <b-col>
         <ul>
-          <comment :comment="1" />
-          <comment :comment="1" />
-          <comment :comment="1" />
+          <li class="pt-3">
+            <div class="avatar">
+              <b-avatar class="mr-3 align-middle" />
+            </div>
+            <comment-text-editor-vue placeholder="Join the discussion" />
+          </li>
+          <comment
+            v-for="(comment, id) in comments"
+            :key="id"
+            :comment="comment"
+            :post-id="postId"
+          />
         </ul>
       </b-col>
     </b-row>
@@ -24,9 +33,24 @@
 <script>
 import socialButtons from '../../social-buttons'
 import comment from './comment'
+import CommentTextEditorVue from './comment-text-editor'
 export default {
   name: 'BlogCommentsVue',
-  components: { socialButtons, comment }
+  components: { CommentTextEditorVue, socialButtons, comment },
+  props: {
+    comments: {
+      type: Array,
+      default: null
+    },
+    postId: {
+      type: Number,
+      default: 0
+    },
+    commentCount: {
+      type: Number,
+      default: 0
+    }
+  }
 }
 </script>
 

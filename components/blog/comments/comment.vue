@@ -6,12 +6,15 @@
 
     <div class="post-body">
       <div class="post-title">
-        Anonymous <span class="text-muted">• Posted 3 days ago</span>
+        {{ comment.author ? comment.author.name : 'Anonymous' }}
+        <span class="text-muted">
+          • Posted
+          {{ timeSince(new Date(comment.created_at)) }}
+          ago
+        </span>
       </div>
       <div class="post-content">
-        This is my comment test post that's starting to get pretty long. I don't
-        even actually know what i'm writing anymore. Wow what should I even
-        write?
+        {{ comment.body }}
       </div>
       <ul class="post-actions">
         <li>
@@ -25,26 +28,87 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" @click.prevent="setOpenComment(comment.id)">
             Reply
           </a>
         </li>
       </ul>
 
-      <div class="post-reply">
-        <b-form-textarea type="text" placeholder="Reply to comment" />
-      </div>
+      <comment-text-editor
+        v-if="openComment === comment.id"
+        :comment="comment"
+      />
+
+      <comment
+        v-for="(subComment, id) in comment.comments"
+        :key="id"
+        :comment="subComment"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import commentTextEditor from './comment-text-editor'
+
 export default {
-  name: 'CommentVue',
+  name: 'Comment',
+  components: {
+    commentTextEditor
+  },
   props: {
     comment: {
+      type: Object,
+      default: null
+    },
+    postId: {
       type: Number,
-      default: 1
+      default: 0
+    }
+  },
+  data() {
+    return {
+      isEditing: false,
+      initialClick: false,
+      commentContent: '',
+      post: this.postId,
+      isPosting: false
+    }
+  },
+  computed: {
+    ...mapState({
+      openComment: state => state.comments.openComment
+    })
+  },
+  methods: {
+    setOpenComment(id) {
+      this.$store.commit('comments/setComment', id)
+    },
+    timeSince(date) {
+      const seconds = Math.floor((new Date() - date) / 1000)
+      let interval = Math.floor(seconds / 31536000)
+
+      if (interval > 0) {
+        return interval + (interval === 1 ? ' year' : ' years')
+      }
+      interval = Math.floor(seconds / 2592000)
+      if (interval > 0) {
+        return interval + (interval === 1 ? ' month' : ' months')
+      }
+      interval = Math.floor(seconds / 86400)
+      if (interval > 0) {
+        return interval + (interval === 1 ? ' day' : ' days')
+      }
+      interval = Math.floor(seconds / 3600)
+      if (interval > 0) {
+        return interval + (interval === 1 ? ' hour' : ' hours')
+      }
+      interval = Math.floor(seconds / 60)
+      if (interval > 0) {
+        return interval + (interval === 1 ? ' minute' : ' minutes')
+      }
+      return Math.floor(seconds) + (interval === 1 ? ' second' : ' seconds')
     }
   }
 }

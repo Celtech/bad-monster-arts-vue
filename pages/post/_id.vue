@@ -16,7 +16,11 @@
         <div v-html="posts.data.body" />
 
         <article-rating />
-        <blog-comments />
+        <blog-comments
+          :comments="posts.data.comments"
+          :post-id="id"
+          :comment-count="posts.data.comment_count"
+        />
       </div>
     </article>
   </div>
@@ -35,7 +39,8 @@ export default {
   },
   data() {
     return {
-      posts: null
+      posts: null,
+      id: parseInt(this.$route.params.id)
     }
   },
   async mounted() {
