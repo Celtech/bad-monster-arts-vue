@@ -1,4 +1,4 @@
-FROM node:10.22.0-alpine
+FROM node:10-alpine
 
 RUN mkdir -p /usr/src/badmonsterarts-vue
 WORKDIR /usr/src/badmonsterarts-vue
