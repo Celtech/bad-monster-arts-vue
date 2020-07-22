@@ -37,12 +37,14 @@
       <comment-text-editor
         v-if="openComment === comment.id"
         :comment="comment"
+        :post-id="postId"
       />
 
       <comment
         v-for="(subComment, id) in comment.comments"
         :key="id"
         :comment="subComment"
+        :post-id="postId"
       />
     </div>
   </div>

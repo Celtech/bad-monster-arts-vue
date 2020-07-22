@@ -16,7 +16,10 @@
             <div class="avatar">
               <b-avatar class="mr-3 align-middle" />
             </div>
-            <comment-text-editor-vue placeholder="Join the discussion" />
+            <comment-text-editor-vue
+              placeholder="Join the discussion"
+              :post-id="postId"
+            />
           </li>
           <comment
             v-for="(comment, id) in comments"

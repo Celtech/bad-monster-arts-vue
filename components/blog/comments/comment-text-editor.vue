@@ -54,6 +54,10 @@ export default {
     placeholder: {
       type: String,
       default: 'Reply to comment'
+    },
+    postId: {
+      type: Number,
+      default: 0
     }
   },
   data() {
@@ -72,7 +76,7 @@ export default {
         .post('/api/comments', {
           body: this.commentContent,
           parent_id: this.comment ? this.comment.id : null,
-          post_id: this.comment ? this.comment.post : 2
+          post_id: this.comment ? this.comment.post : this.postId
         })
         .then(res => {
           this.isEditing = false
