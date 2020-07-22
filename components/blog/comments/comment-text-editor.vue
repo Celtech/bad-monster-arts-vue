@@ -75,20 +75,13 @@ export default {
           post_id: this.comment ? this.comment.post : 2
         })
         .then(res => {
-          const data = res.data
           this.isEditing = false
           this.initialClick = false
+          this.commentContent = ''
           this.$store.commit('comments/setComment', null)
-          this.comment.comments.push({
-            author: null,
-            body: this.commentContent,
-            comments: null,
-            created_at: new Date(),
-            id: data ? data.id : null,
-            post: this.comment ? this.comment.post : null
-          })
+          this.$store.commit('comments/setUpdate', true)
+          this.isPosting = false
         })
-      this.isPosting = false
     },
     onFocus() {
       this.initialClick = true

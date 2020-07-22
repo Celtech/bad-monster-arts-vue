@@ -1,5 +1,6 @@
 export const state = () => ({
-  openComment: null
+  openComment: null,
+  update: false
 })
 
 export const mutations = {
@@ -9,5 +10,8 @@ export const mutations = {
     }
 
     state.openComment = id
+  },
+  setUpdate(state, value) {
+    state.update = value
   }
 }
