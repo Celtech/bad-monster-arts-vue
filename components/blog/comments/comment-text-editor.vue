@@ -21,13 +21,13 @@
     >
       <b-button-group size="sm">
         <b-button variant="primary">
-          <font-awesome-icon :icon="['fab', 'facebook']" />
+          <font-awesome-icon :icon="['fab', 'facebook-f']" />
         </b-button>
         <b-button variant="primary">
           <font-awesome-icon :icon="['fab', 'twitter']" />
         </b-button>
         <b-button variant="primary">
-          <font-awesome-icon :icon="['fas', 'underline']" />
+          <font-awesome-icon :icon="['fas', 'google']" />
         </b-button>
         <b-button variant="primary">
           <font-awesome-icon :icon="['fas', 'strikethrough']" />
