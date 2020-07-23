@@ -8,9 +8,7 @@
       <div class="post-title">
         {{ comment.author ? comment.author.name : 'Anonymous' }}
         <span class="text-muted">
-          • Posted
-          {{ timeSince(new Date(comment.created_at)) }}
-          ago
+          {{ `• ${timeSince(new Date(comment.created_at))} ago` }}
         </span>
       </div>
       <div class="post-content">
@@ -132,6 +130,9 @@ export default {
       font-weight: bold;
       .text-muted {
         font-weight: normal;
+        font-size: 12px;
+        vertical-align: middle;
+        line-height: 1rem;
       }
     }
 
